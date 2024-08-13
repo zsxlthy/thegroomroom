@@ -1,0 +1,469 @@
+body {
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items:center;
+    background-color: black;
+    padding: 10px 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height:150px;
+}
+
+.navbar-left .title {
+    color: gold;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.navbar-left {
+    left: 10px;
+}
+
+.navbar-right {
+    right: 10px;
+    position: absolute;
+}
+
+.navbar-center {
+    display: flex;
+    justify-content:center;
+    gap: 50px;
+    position:relative;
+    flex-grow: 1;
+}
+
+.nav-link {
+    color: gold;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: grey;
+    border-radius: 5px;
+    color: white;
+}
+
+.navbar-right .logo {
+    width: 170px;
+    height: auto;
+    padding-right: 30px;
+}
+
+.content {
+    margin-top: 190px;
+}
+
+.about-section {
+    background-image: url('barbershopasd.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.about-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.reviews-section, .star-review-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin-top: 20px;
+}
+
+.review {
+    background-color: white;
+    margin: 10px auto;
+    padding: 20px;
+    max-width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.star-rating {
+    font-size: 30px;
+}
+
+.star-rating i {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.star-rating i.fas {
+    color: gold;
+}
+
+.star-rating i.far {
+    color: grey;
+}
+
+#naslov {
+    font-weight: bold;
+    color: goldenrod;
+}
+
+#opis {
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+}
+#opis2 {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+#recenzija, p {
+    color: black;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.carousel-container {
+    display: inline-block;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.carousel {
+    width: 50%;
+    max-width: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin: 0 auto;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%;
+    height: auto;
+}
+
+#carousel-text {
+    margin-top: 20px;
+    font-size: 20px;
+    color: white;
+}
+.carousel-container1 {
+    display: inline-block;
+    text-align: center;
+    margin: 10px auto;
+    padding: 10px 10px;
+}
+
+.carousel1 {
+    width: 80%; 
+    max-width: 600px; 
+    height: 400px; 
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-left: 60px;
+}
+
+.carousel-images1 {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    height: 100%; 
+}
+
+.carousel-images1 img {
+    flex: 1 0 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+#carousel-text1 {
+    margin-top: 20px;
+    font-size: 20px;
+    color: white;
+}
+.carousel-container2 {
+    display: inline-block;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.carousel2 {
+    width: 50%;
+    max-width: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin: 0 auto;
+}
+
+.carousel-images2 {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.carousel-images2 img {
+    width: 100%;
+    height: auto;
+}
+
+#carousel-text2 {
+    margin-top: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+#brada{
+    width: 550px;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding-top: 35px;
+    margin-left: 50px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: gold;
+    font-weight: bold;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(even) td {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+.contact-info, .map, .social-media, .business-hours {
+    padding: 50px 20px;
+    text-align: center;
+    color: white;
+
+}
+
+.map iframe {
+    border: 0;
+    border-radius: 10px;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social-link {
+    color: gold;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-link:hover {
+    color: white;
+}
+
+.social-link i {
+    vertical-align: middle;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: gold;
+    color: black;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    font-size: 24px;
+    display: none;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+#back-to-top:hover {
+    background-color: darkgoldenrod;
+}
+
+#back-to-top:focus {
+    outline: none;
+}
+.dropdown-menu{
+    display: none;
+}
+.menu-icon{
+    display:none;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-left, .navbar-right {
+        display: none;
+    }
+    .navbar-center {
+        justify-content: flex-start;
+        flex-grow: 0;
+    }
+    .navbar {
+        height: 60px;
+        padding: 10px;
+        justify-content: center;
+    }
+    .navbar .menu-icon {
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 30px;
+        color: gold;
+        cursor: pointer;
+    }
+    .navbar-center {
+        display: none;
+    }
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        text-align: center;
+        z-index: 999;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .dropdown-menu a {
+        display: block;
+        padding: 15px 0;
+        color: gold;
+        text-decoration: none;
+        font-size: 18px;
+        border-bottom: 1px solid grey;
+    }
+    .dropdown-menu a:hover {
+        background-color: grey;
+        color: white;
+    }
+    .nav-link {
+        font-size: 18px;
+        padding: 5px 8px;
+    }
+    
+    .about-content, .review {
+        padding: 15px;
+        margin: 5px auto;
+    }
+
+    #opis {
+        font-size: 16px;
+    }
+
+    .review {
+        max-width: 90%;
+    }
+
+    .carousel, .carousel1, .carousel2 {
+        width: 90%;
+        max-width: none;
+    }
+
+    #brada {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    table, th, td {
+        font-size: 14px;
+    }
+    .jumbotron {
+        padding: 20px;
+    }
+
+    #naslov {
+        font-size: 1.5rem;
+    }
+
+    #opis {
+        font-size: 0.9rem;
+    }
+
+    .carousel-images img {
+        width: 100%;
+        height: auto;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    #back-to-top {
+        font-size: 1.2rem;
+    }
+
+    .footer .social-media {
+        padding: 10px 0;
+    }
+    .map iframe {
+        width: 100%;
+        height: 300px; 
+    .carousel1{
+        margin-left: 10px;
+    }
+}
+}
+
+.menu-icon.clicked + .dropdown-menu {
+    display: block;
+}
