@@ -391,6 +391,7 @@ tr:hover {
         text-decoration: none;
         font-size: 18px;
         border-bottom: 1px solid grey;
+        background-color: black;
     }
     .dropdown-menu a:hover {
         background-color: grey;
