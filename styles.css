@@ -359,6 +359,7 @@ tr:hover {
         height: 60px;
         padding: 10px;
         justify-content: center;
+        background-color: black;
     }
     .navbar .menu-icon {
         display: block;
