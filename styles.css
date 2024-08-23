@@ -358,7 +358,7 @@ tr:hover {
     .navbar {
         height: 60px;
         padding: 10px;
-        justify-content: center;
+        justify-content: center !important;
         background-color: black !important;
     }
     .navbar .menu-icon {
@@ -380,7 +380,7 @@ tr:hover {
         left: 0;
         width: 100%;
         background-color: black !important;
-        text-align: center;
+        text-align: center !important;
         z-index: 999;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
@@ -388,14 +388,14 @@ tr:hover {
         display: block;
         padding: 15px 0;
         color: gold;
-        text-decoration: none;
+        text-decoration: none !important;
         font-size: 18px;
         border-bottom: 1px solid grey;
         background-color: black !important;
     }
     .dropdown-menu a:hover {
-        background-color: grey;
-        color: white;
+        background-color: grey !important;
+        color: white !important;
     }
     .nav-link {
         font-size: 18px;
