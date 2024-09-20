@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+sitemap:https://zsxlthy.github.io/thegroomroom/sitemap.xml
