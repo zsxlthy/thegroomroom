@@ -1,6 +1,9 @@
 body {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family:Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -348,6 +351,13 @@ tr:hover {
 }
 
 @media screen and (max-width: 768px) {
+    body {
+        margin: 0;
+        font-family:Arial, Helvetica, sans-serif;
+        padding: 0;
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
     .navbar-left, .navbar-right {
         display: none;
     }
@@ -401,7 +411,9 @@ tr:hover {
         font-size: 18px;
         padding: 5px 8px;
     }
-    
+    .content {
+        margin-top: 100px;
+    }
     .about-content, .review {
         padding: 15px;
         margin: 5px auto;
