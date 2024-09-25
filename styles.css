@@ -362,7 +362,7 @@ tr:hover {
         background-color: black !important;
     }
     .navbar .menu-icon {
-        display: block;
+        display: block !important;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
